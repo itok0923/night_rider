@@ -23,9 +23,9 @@ void loop() {
   for(j=0;j<8;j++){
     for(i=0;i<8;i++){
       if(i==j){
-        led[i].LED_on();
+        led[i].LED_brightness(60);
       }else{
-        led[i].LED_off();
+        led[i].LED_brightness(0);
       }
     }
     delay(500);
@@ -33,9 +33,9 @@ void loop() {
   for(j=6;j>0;j--){
     for(i=0;i<8;i++){
       if(i==j){
-        led[i].LED_on();
+        led[i].LED_brightness(60);
       }else{
-        led[i].LED_off();
+        led[i].LED_brightness(0);
       }
     }
     delay(500);
