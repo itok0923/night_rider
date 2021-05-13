@@ -20,19 +20,9 @@ void setup() {
 }
 
 void loop() {
-  for(j=0;j<8;j++){
+  for(j=0;j<14;j++){
     for(i=0;i<8;i++){
-      if(i==j){
-        led[i].LED_brightness(60);
-      }else{
-        led[i].LED_brightness(0);
-      }
-    }
-    delay(500);
-  }
-  for(j=6;j>0;j--){
-    for(i=0;i<8;i++){
-      if(i==j){
+      if((i==j)||(i==(14-j))){
         led[i].LED_brightness(60);
       }else{
         led[i].LED_brightness(0);

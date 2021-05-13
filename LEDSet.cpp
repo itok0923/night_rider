@@ -18,10 +18,6 @@ void LEDSet::LED_off(){
   LEDstat = LOW;
   digitalWrite(LEDpin,LEDstat);
 }
-void LEDSet::LED_write(int stat){
-  LEDstat=stat;  
-  digitalWrite(LEDpin,stat);
-}
 void LEDSet::LED_brightness(int duty_cycle){
   bright = 255*duty_cycle/100;
   analogWrite(LEDpin,bright);
